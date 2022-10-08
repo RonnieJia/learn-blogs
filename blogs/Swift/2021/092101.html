@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Swift面向协议编程 | bono</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/learn-blogs/favicon.ico">
+    <meta name="description" content="生活不止眼前的苟且，还有诗和远方">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/learn-blogs/assets/css/0.styles.c363503e.css" as="style"><link rel="preload" href="/learn-blogs/assets/js/app.3dffa5bc.js" as="script"><link rel="preload" href="/learn-blogs/assets/js/3.bddbc2aa.js" as="script"><link rel="preload" href="/learn-blogs/assets/js/1.cd544a43.js" as="script"><link rel="preload" href="/learn-blogs/assets/js/15.b2646dc8.js" as="script"><link rel="prefetch" href="/learn-blogs/assets/js/10.38ca074b.js"><link rel="prefetch" href="/learn-blogs/assets/js/11.ec7601b2.js"><link rel="prefetch" href="/learn-blogs/assets/js/12.6f35b4f3.js"><link rel="prefetch" href="/learn-blogs/assets/js/13.0f072c09.js"><link rel="prefetch" href="/learn-blogs/assets/js/14.90da7dc3.js"><link rel="prefetch" href="/learn-blogs/assets/js/16.3be96920.js"><link rel="prefetch" href="/learn-blogs/assets/js/17.4b70a0e9.js"><link rel="prefetch" href="/learn-blogs/assets/js/18.9a9a9a97.js"><link rel="prefetch" href="/learn-blogs/assets/js/19.98b1418e.js"><link rel="prefetch" href="/learn-blogs/assets/js/4.b975e3f7.js"><link rel="prefetch" href="/learn-blogs/assets/js/5.9d7ac308.js"><link rel="prefetch" href="/learn-blogs/assets/js/6.383bbcaf.js"><link rel="prefetch" href="/learn-blogs/assets/js/7.21e0f900.js"><link rel="prefetch" href="/learn-blogs/assets/js/8.dba7a244.js"><link rel="prefetch" href="/learn-blogs/assets/js/9.60b6a455.js">
+    <link rel="stylesheet" href="/learn-blogs/assets/css/0.styles.c363503e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-5bb33761><div data-v-5bb33761><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-5bb33761 data-v-5bb33761><h3 class="title" data-v-59e6cb88>bono</h3> <p class="description" data-v-59e6cb88>生活不止眼前的苟且，还有诗和远方</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>贾平辉</span>
+          
+        <span data-v-59e6cb88>2015 - </span>
+        2022
+      </a></span></div></div> <div class="hide" data-v-5bb33761><header class="navbar" data-v-5bb33761><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/learn-blogs/" class="home-link router-link-active"><img src="/learn-blogs/logo.png" alt="bono" class="logo"> <span class="site-name">bono</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/learn-blogs/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learn-blogs/categories/category2/" class="nav-link"><i class="undefined"></i>
+  category2
+</a></li><li class="dropdown-item"><!----> <a href="/learn-blogs/categories/Swift/" class="nav-link"><i class="undefined"></i>
+  Swift
+</a></li></ul></div></div><div class="nav-item"><a href="/learn-blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/learn-blogs/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learn-blogs/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-5bb33761></div> <aside class="sidebar" data-v-5bb33761><div class="personal-info-wrapper" data-v-1fad0c41 data-v-5bb33761><img src="/learn-blogs/avatar.png" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    贾平辉
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>9</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>4</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/learn-blogs/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learn-blogs/categories/category2/" class="nav-link"><i class="undefined"></i>
+  category2
+</a></li><li class="dropdown-item"><!----> <a href="/learn-blogs/categories/Swift/" class="nav-link"><i class="undefined"></i>
+  Swift
+</a></li></ul></div></div><div class="nav-item"><a href="/learn-blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/learn-blogs/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learn-blogs/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-5bb33761><h3 class="title" data-v-59e6cb88>Swift面向协议编程</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>贾平辉</span>
+          
+        <span data-v-59e6cb88>2015 - </span>
+        2022
+      </a></span></div></div> <div data-v-5bb33761><div data-v-5bb33761><main class="page" style="padding-right:0;"><section style="display:;"><div class="page-title"><h1 class="title">Swift面向协议编程</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>贾平辉</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>3/5/2021</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>iOS</span></i></div></div> <div class="theme-reco-content content__default"><h3 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h3> <p>Apple在2015年的WWDC提出Swift是一种面向协议编程（Protocol Oriented Programming，简称POP）的语言，在Swift的源码中我们可以看到大量的协议。本文主要目的是带领大家简单认识面向协议编程。</p> <p>本文主要从以下这几点来简单介绍：</p> <ol><li>Swift中的协议</li> <li>为什么面向协议</li> <li>协议扩展的一些注意点</li></ol> <h3 id="_1-swift中的协议"><a href="#_1-swift中的协议" class="header-anchor">#</a> 1. Swift中的协议</h3> <p>Swift 标准库中有 50 多个复杂不一的协议，几乎所有的实际类型都是满足若干协议的。protocol 是 Swift 语言的基础，语言的其他部分正是在这个基础上组织和建立起来的。这和我们熟知的面向对象的构建方式很不一样。</p> <p>一个简单的Swift协议可以如下定义：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>protocol Eatable {
+    var isHunger: Bool { get }
+    func eatFoods()
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>可以看到Swift协议就是一组属性或方法的定义，而如果某个具体类型想要遵守一个协议，那它需要实现这个协议所定义的所有这些内容。协议实际上做的事情不过是“关于实现的约定”。</p> <h3 id="_2-为什么面向协议"><a href="#_2-为什么面向协议" class="header-anchor">#</a> 2. 为什么面向协议</h3> <p>Swift和OC一样都是面向对象（OOP）的语言，同OC一样使用OOP编写代码能满足我们所有需求的开发。那为什么还需要引入POP呢？</p> <p>OOP是一种很好的抽象方式，但有些场景还存在一些缺陷。它无法为两个不同继承关系的类添加同一个方法。例如有个<code>CustomeLabel</code>和<code>CustomButton</code>分别继承与<code>UILabel</code>和<code>UIButton</code>，现在需要给这两个自定义的控件添加同一个方法<code>func method()</code>，OOP我们可能会使用以下几种方案：</p> <ol><li>同样的代码分别写到<code>CustomeLabel</code>和<code>CustomButton</code>中。这种方案不建议采用，应该尽量避免这种做法。</li> <li>生成一个单独的类实现这个<code>func method()</code>方法，然后<code>CustomeLabel</code>和<code>CustomButton</code>引入这个类。这种方案引入了额外的依赖。</li> <li>将<code>func method()</code>这个方法添加到共同的父类<code>UIView</code>中。这种方案会给<code>UIView</code>添加更多更多的功能代码导致分工不明确，并且<code>UIView</code>的一些其他子类并不需要这个方法。</li></ol> <p>使用POP解决上述问题，首先我们需要定义一个协议：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>protocol Customable {
+    func method()
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>然后<code>CustomLabel</code>和<code>CustomButton</code>同时遵守这个协议，并实现<code>func method()</code>方法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>class CustomLabel: UILabel, Customable {
+    func method() {
+        print(&quot;This is customMethod&quot;)
+    }
+}
+
+class CustomButton: UIButton, Customable {
+    func method() {
+        print(&quot;This is customMethod&quot;)
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h4 id="协议扩展"><a href="#协议扩展" class="header-anchor">#</a> <strong>协议扩展</strong></h4> <p>这个方案<code>func method()</code>还是在<code>CustomLabel</code>和<code>CustomButton</code>中同时实现了，和OOP相比，并没有任何优势。但是Apple在Swift2.0引入为协议引入了一种新的特性，协议扩展，就是可以为协议提供一个默认实现。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>extension Customable {
+    func method() {
+        print(&quot;This is customMethod&quot;)
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>此时<code>CustomLabel</code>和<code>CustomButton</code>只需要遵守这个协议，就可以直接使用<code>func method()</code>这个方法了。</p> <p>此外，在Swift中Apple的建议是应该更多的使用值类型（结构体类型和枚举类型等），值类型是无法继承的，但是可以引入协议。</p> <h4 id="协议继承"><a href="#协议继承" class="header-anchor">#</a> <strong>协议继承</strong></h4> <p>协议可以从其他协议继承，然后在它继承的需求之上添加功能，因此可以提供更细粒度和更灵活的设计。</p> <h4 id="协议组合"><a href="#协议组合" class="header-anchor">#</a> <strong>协议组合</strong></h4> <p>类、结构体和枚举可以遵守多个协议，它们可以采用多个协议的默认实现。这在概念上类似于多继承。这种组合的方式不仅比将所有需要的功能压缩到一个基类中更灵活，而且也适用于值类型。</p> <p>总的来说，面向协议就是通过协议扩展、协议继承和协议组合的方式来设计编写需要的代码。</p> <h3 id="_3-协议的一些注意点"><a href="#_3-协议的一些注意点" class="header-anchor">#</a> 3. 协议的一些注意点</h3> <ol><li><p>Swift协议中的属性：</p> <ul><li>协议可以定义实例属性和类型属性(使用static)</li> <li>协议不指定属性是存储属性还是计算型属性，只指定属性名称和类型以及读写性</li> <li>协议指定属性的读取类型，使用的get和set，中间不能使用逗号</li> <li>协议总是使用var关键字来声明变量属性</li> <li>不能给协议属性设置默认值，因为默认值被看做是一种实现</li></ul></li> <li><p>Swift协议中的方法：</p> <ul><li>协议可以定义实例方法和类方法(使用static)</li> <li>协议定义函数时不能添加函数的实现，同时，传入的参数也不能使用默认参数</li> <li>如果协议定义的实例方法会改变实例本身，需要在定义的方法名前使用mutating；这使得结构和枚举能够遵循此协议并满足此方法要求。</li></ul></li> <li><p>协议扩展：</p> <ul><li>添加现有的计算属性和方法，不能添加存储属性</li> <li>扩展不会增加协议的需求</li> <li>和泛型一样，协议也能使用where子句进行类型限制</li></ul></li> <li><p>协议扩展的分发规则</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>•if 调用方法的变量被推断为协议类型
+    •if 协议中声明了方法
+        无论扩展中是否实现该方法，都调用运行时类型的实现(动态派发)
+    •else
+        直接调用默认实现 (静态派发)
+•else
+    调用该类型的实现
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong>动态派发</strong>是指需要在运行时找到方法的具体实现。   Swift中的动态派发和 OC 中的动态派发类似，在运行时程序会根据被调用的方法的名字去内存中的方法表中查表，找到方法的实现并执行。
+<strong>静态派发</strong>是指在运行时调用方法不需要查表，直接跳转到方法的代码中执行。</p></li></ol> <p><a href="https://onevcat.com/2016/11/pop-cocoa-1/" target="_blank" rel="noopener noreferrer">参考：《面向协议编程与 Cocoa 的邂逅 》<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:0;" data-v-ac050c62></ul></main></div> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/learn-blogs/assets/js/app.3dffa5bc.js" defer></script><script src="/learn-blogs/assets/js/3.bddbc2aa.js" defer></script><script src="/learn-blogs/assets/js/1.cd544a43.js" defer></script><script src="/learn-blogs/assets/js/15.b2646dc8.js" defer></script>
+  </body>
+</html>
